@@ -1,0 +1,118 @@
+/*
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+*/
+
+@import url(fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+*{font-family: "Noto Sans Japanese";}
+
+/*
+
+imagecolor:
+rgb(255,0,160)
+#ff00a0
+
+*/
+
+/*画面全体のフチを無くす*/
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
+}
+
+/*グローバルナビ*/
+ul.above {
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  z-index:100;
+}
+
+ul.above li{
+  /*ここがないと箇条書きの点が出る*/
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 160px;
+/*  width: 100%;  */
+/*ボタンの横幅揃える*/
+  margin:0 auto;   /*リンクの間隔を均等にする*/
+}
+
+ul.above a{
+  display:block;   /*テキスト部分以外もクリックできる*/
+  line-height:77px;
+  height:77px;
+  text-align:center;
+  background-color: rgba(0,0,0,0.3); /*ヘッダー背景を透過*/
+  color: rgb(255,255,255);
+  text-decoration: none;  /*文字の下線を消す*/
+}
+
+/*ホバーでナビ(文字部)の色が変わる*/
+ul.above a:hover{
+  color: #ff00a0;
+}
+
+/*ヘッダーの背景と位置*/
+header{
+  background-color: #ff00a0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*トップページの段組み*/
+section.topNews{
+  background-color: rgba(255,255,255,0.75);
+  width: 90%;
+  text-align: center;
+  margin: 20px;
+}
+
+/*段組み*/
+#pageMain{
+  background-color: rgba(255,255,255,0.75);
+  width: 73%;
+  text-align: center;
+  margin: 9px;
+}
+
+/*画像のセンタリング*/
+img{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 1.429;
+  color: #ffffff;
+  clear: both;  /*段組みに紛れて回り込まない*/
+  text-align: center;
+}
+
+/*見出し*/
+h1{
+  font-size: 25px;
+  background-color: #ff00a0;
+  color: #ffffff;
+  margin: 10px;
+}
+
+h2{
+  font-size: 20px;
+  color: #ff00a0;
+  margin: 10px;
+}
+
+p{
+  font-size: 17px;
+  color: #5b5b5b;
+  margin: 20px;
+  text-align: center;
+}
