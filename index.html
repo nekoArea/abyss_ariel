@@ -5,13 +5,16 @@
   <head>
     <meta charset="utf-8">
     <title>Ariel official website</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="./dist/css/material-photo-gallery.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" type='text/css'>
 
     <meta name="description" content="創作アイドル北千住千洋オフィシャルサイト">
     <meta name="keywords" content="北千住千洋, ありえる, プロジェクトアビス, project Abyss">
     <!--
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    https://fonts.googleapis.com/earlyaccess/notosansjapanese.css
     -->
 
   </head>
@@ -92,7 +95,30 @@
 
       <h1>gallery</h1>
       <p>
-        手軽に見やすく公開する方法を検討しています。(ご意見募集中)<br>
+        <div class="m-p-g">
+    			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    				<img src="pic/01.png" data-full="pic/01.png" class="m-p-g__thumbs-img" />
+            <img src="pic/02.png" data-full="pic/02.png" class="m-p-g__thumbs-img" />
+            <img src="pic/03.png" data-full="pic/03.png" class="m-p-g__thumbs-img" />
+            <img src="pic/04.png" data-full="pic/04.png" class="m-p-g__thumbs-img" />
+            <img src="pic/05.png" data-full="pic/05.png" class="m-p-g__thumbs-img" />
+            <img src="pic/06.jpg" data-full="pic/06.jpg" class="m-p-g__thumbs-img" />
+            <img src="pic/07.jpg" data-full="pic/07.jpg" class="m-p-g__thumbs-img" />
+            <img src="pic/08.png" data-full="pic/08.png" class="m-p-g__thumbs-img" />
+            <img src="pic/09.png" data-full="pic/09.png" class="m-p-g__thumbs-img" />
+    			</div>
+
+    			<div class="m-p-g__fullscreen"></div>
+    		</div>
+
+    		<script src="./dist/js/material-photo-gallery.js"></script>
+    		<script>
+    			var elem = document.querySelector('.m-p-g');
+
+    			document.addEventListener('DOMContentLoaded', function() {
+    				var gallery = new MaterialPhotoGallery(elem);
+    			});
+    		</script>
       </p>
 
       <h1>contact</h1>
