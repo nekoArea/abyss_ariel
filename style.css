@@ -29,7 +29,7 @@ ul.above li{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  width: 160px;
+  width: 100px;
 /*  width: 100%;  */
 /*ボタンの横幅揃える*/
   margin:0 auto;   /*リンクの間隔を均等にする*/
