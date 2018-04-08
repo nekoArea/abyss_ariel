@@ -126,3 +126,13 @@ table{
 .box p {
     margin: 20px;
 }
+
+/*リンクをピンクに*/
+a {
+  color: #ff00a0;
+}
+
+/*タイトルを白に*/
+.title{
+  color: #ffffff;
+}
